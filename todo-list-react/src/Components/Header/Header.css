@@ -1,0 +1,7 @@
+.header{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    span{
+        color: rgb(29, 28, 28);
+    }
+}

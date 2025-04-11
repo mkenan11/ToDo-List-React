@@ -1,0 +1,50 @@
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    input{
+        height: 30px;
+        padding: 5px 10px;
+        padding-left: 15px;
+        border-radius: 10px;
+        outline: none;
+        border: 1px solid rgb(80, 79, 79);
+    }
+
+    input::placeholder{
+        color: rgb(65, 64, 64);
+    }
+    input:focus{
+        border: 1px solid #1717FF;
+    }
+    button{
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        font-size: 15px;
+        padding: 0 15px;
+        border-radius: 10px;
+        outline: none;
+        border: 1px solid gray;
+        font-weight: 500;
+        color: white;
+        background-color: rgb(23, 23, 255);
+        transition: 0.3s;
+    }
+
+    button:hover{
+        border: 1px solid rgb(23, 23, 255);
+        background-color: transparent;
+        color: rgb(23, 23, 255);
+        cursor: pointer;
+        transform: scale(1.03);
+    }
+
+    button:active{
+        transform: scale(0.98);
+    }
+}
+

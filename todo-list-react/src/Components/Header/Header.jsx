@@ -1,7 +1,13 @@
+import "./Header.css";
+import { useContext } from "react";
+import { TodoContext } from "../../Context/TodoContext/TodoContext";
+
+
 export function Header() {
-    return (
-        <header>
-            <h1>Todo List</h1>
-        </header>
-    )
+  const { todos } = useContext(TodoContext);
+  return (
+    <h1 className="header">
+        TODO List : <span>{todos.length}</span>
+    </h1>
+  );
 }

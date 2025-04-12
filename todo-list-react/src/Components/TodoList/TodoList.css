@@ -16,6 +16,7 @@ ul {
     text-align: left;
     margin-right: 100px;
     transition: 0.3s;
+    width: fit-content;
 
     span {
       font-size: 17px;

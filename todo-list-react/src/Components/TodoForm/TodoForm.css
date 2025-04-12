@@ -1,50 +1,61 @@
-form{
+form {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-    input{
-        height: 30px;
-        padding: 5px 10px;
-        padding-left: 15px;
+    gap: 20px; 
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    input {
+        height: 35px; 
+        padding: 5px 15px; 
         border-radius: 10px;
         outline: none;
-        border: 1px solid rgb(80, 79, 79);
+        border: 1px solid #ccc; 
+        font-size: 16px; 
+        transition: border-color 0.3s ease; 
     }
-
-    input::placeholder{
-        color: rgb(65, 64, 64);
+    input::placeholder {
+        color: rgb(100, 100, 100); 
     }
-    input:focus{
+    
+    input:focus {
         border: 1px solid #1717FF;
+        box-shadow: 0 0 5px rgba(23, 23, 255, 0.5); 
     }
-    button{
-        height: 40px;
+    button {
+        height: 45px; /* Böyük düymə */
         display: flex;
         justify-content: center;
         align-items: center;
         width: fit-content;
-        font-size: 15px;
-        padding: 0 15px;
+        font-size: 16px; 
+        padding: 0 20px;
         border-radius: 10px;
         outline: none;
-        border: 1px solid gray;
+        border: 1px solid #1717FF;
         font-weight: 500;
         color: white;
-        background-color: rgb(23, 23, 255);
-        transition: 0.3s;
+        background-color: #1717FF;
+        transition: 0.3s ease; 
+        cursor: pointer; 
     }
-
-    button:hover{
-        border: 1px solid rgb(23, 23, 255);
+    
+    button:hover {
         background-color: transparent;
-        color: rgb(23, 23, 255);
-        cursor: pointer;
-        transform: scale(1.03);
+        color: #1717FF;
+        border: 1px solid #1717FF;
+        transform: scale(1.05); 
     }
-
-    button:active{
-        transform: scale(0.98);
+    
+    button:active {
+        transform: scale(0.98); 
     }
+    
 }
+
+
+
+
 

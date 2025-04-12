@@ -6,13 +6,15 @@ export function TodoList() {
   const { todos, deleteTodo } = useContext(TodoContext);
 
   return (
-    <ul>
-      {todos.map((todo) => (
-        <li key={todo.id}>
-          <span>{todo.text}</span>
-          <button onClick={() => deleteTodo(todo.id)}>Sil</button>
-        </li>
-      ))}
-    </ul>
+    todos.length > 0 && (
+      <ul id="todo">
+        {todos.map((todo) => (
+          <li key={todo.id}>
+            <span>{todo.text}</span>
+            <button onClick={() => deleteTodo(todo.id)}>Sil</button>
+          </li>
+        ))}
+      </ul>
+    )
   );
 }
